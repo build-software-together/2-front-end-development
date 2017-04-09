@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Calculator</title>
+</head>
+<body>
+<h1 align="center">Javascript Calculator</h1>
+<div align="center">
+<fieldset style="width:270px;">
+Num 1: <input id="num1"><br>
+Num 2: <input id="num2">
+<br><br>
+<button type="button" onclick="addition()">+</button>&nbsp
+<button type="button" onclick="subtraction()">-</button>&nbsp
+<button type="button" onclick="multiplication()">*</button>&nbsp
+<button type="button" onclick="division()">/</button>
+<br><br>
+Result
+<br>
+<textarea id="result" rows="1" cols="30"></textarea>
+
+</fieldset>
+</div>
+<script>
+  function addition(){
+  	var num1, num2, result;
+  	num1 = document.getElementById("num1").value;
+  	num2 = document.getElementById("num2").value;
+  	result = parseInt(num1) + parseInt(num2);
+  	document.getElementById("result").innerHTML = result;
+  }
+
+    function subtraction(){
+  	var num1, num2, result;
+  	num1 = document.getElementById("num1").value;
+  	num2 = document.getElementById("num2").value;
+  	result = parseInt(num1) - parseInt(num2);
+  	document.getElementById("result").innerHTML = result;
+  }
+    function multiplication(){
+  	var num1, num2, result;
+  	num1 = document.getElementById("num1").value;
+  	num2 = document.getElementById("num2").value;
+  	result = parseInt(num1) * parseInt(num2);
+  	document.getElementById("result").innerHTML = result;
+  }
+
+    function division(){
+  	var num1, num2, result;
+  	num1 = document.getElementById("num1").value;
+  	num2 = document.getElementById("num2").value;
+  	result = parseInt(num1) / parseInt(num2);
+  	document.getElementById("result").innerHTML = result;
+  }
+
+
+
+</script>
+</body>
+</html>
